@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+gem "sparql-client"
+
+# gem "linkeddata"
+# gem "nokogiri"
+# gem "equivalent-xml"
