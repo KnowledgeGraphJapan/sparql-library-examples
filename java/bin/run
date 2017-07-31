@@ -1,0 +1,12 @@
+#!/bin/sh
+
+JENA_HOME="$( cd "$( dirname "$SCRIPT" )/.." && pwd )"
+export JENA_HOME
+JENA_CP="$JENA_HOME"'/lib/*:.'
+
+# On CYGWIN convert path and end with a ';' 
+case "$(uname)" in
+   CYGWIN*) JENA_CP="$(cygpath -wp "$JENA_CP");";;
+esac
+
+java -cp "$JENA_CP" "$@" 
