@@ -35,5 +35,5 @@ $ sbcl
                                       :base-url "http://ja.dbpedia.org/sparql")))
 * (setq result
  (query *repository*
-      "select distinct * where { <http://ja.dbpedia.org/resource/東京都> ?p ?o .  } LIMIT 100"))
+      "select distinct * where { ?s ?p ?o .  } LIMIT 10"))
 ```
