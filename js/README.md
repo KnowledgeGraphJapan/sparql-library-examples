@@ -1,5 +1,7 @@
 # JavaScript
 
+Node.jsを想定。
+
 ## ライブラリ
 
 様々なものが乱立しているけどsparql-client-2がモダンな感じ。
