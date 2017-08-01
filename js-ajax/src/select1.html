@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Select 1</title>
+    <script type="text/javascript">
+  const endpoint = "http://ja.dbpedia.org/sparql";
+  const query = "SELECT * where { ?s ?p ?o. } LIMIT 10";
+  const x = new XMLHttpRequest();
+  x.onreadystatechange = function() {
+  if (x.readyState == 4 && x.status == 200)
+    document.body.appendChild(document.createTextNode(x.responseText));
+  };
+  x.open("GET", endpoint + "?query=" + encodeURIComponent(query), true);
+  x.setRequestHeader("Accept", "application/sparql-results+json");
+  x.send();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
