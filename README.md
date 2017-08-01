@@ -1,2 +1,3 @@
 # sparql-library-examples
-ちょっと演習用テスト
+
+SPARQLを各プログラム言語から使うためのサンプル集
