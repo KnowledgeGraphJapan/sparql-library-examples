@@ -1,6 +1,6 @@
 # JavaScript
 
-Node.jsを想定。
+Node.js 6系を想定。
 
 ## ライブラリ
 
