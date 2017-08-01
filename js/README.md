@@ -1,8 +1,12 @@
-# sparql for js
+# JavaScript
 
 ## ライブラリ
 
-[sparql](https://www.npmjs.com/package/sparql)
+様々なものが乱立しているけどsparql-client-2がモダンな感じ。
 
-```npm install sparql
+[sparql-client-2](https://www.npmjs.com/package/sparql-client-2)
+
+```npm install sparql-client-2
 ```
+
+SPARQLの結果をJSONで直接取って処理することも可能。
