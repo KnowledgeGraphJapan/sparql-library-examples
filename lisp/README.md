@@ -2,7 +2,7 @@
 
 実行環境はsbclを想定。他でも動くはず。
 
-## quicklisp
+## 下準備: quicklisp
 
 ```
 $ wget http://beta.quicklisp.org/quicklisp.lisp
@@ -16,7 +16,7 @@ $ sbcl
 * (ql:add-to-init-file)
 ```
 
-## cl-fuseki
+## ライブラリ
 [cl-fuseki](https://github.com/madnificent/cl-fuseki.git)
 
 ```

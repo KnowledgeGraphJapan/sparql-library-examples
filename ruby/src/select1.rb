@@ -3,10 +3,12 @@
 #
 require 'sparql/client'
 
-ENDPOINT = "http://dbpedia.org/sparql"
+ENDPOINT = "http://ja.dbpedia.org/sparql"
 
 sparql = SPARQL::Client.new(ENDPOINT)
-result = sparql.select.where([:s, :p, :o]).limit(10)
+result = sparql.query("SELECT * WHERE { ?s ?p ?o } LIMIT 10")
+# 以下のように書くこともできる
+#result = sparql.select.where([:s, :p, :o]).limit(10)
 
 result.each_solution do |solution|
   puts solution.inspect
