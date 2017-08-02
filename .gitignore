@@ -1,6 +1,9 @@
 # ruby
 *.gem
 *.rbc
+/java/.metadata/
+/java/bin/
+/.metadata/
 /ruby/.bundle/
 /ruby/vendor/bundle
 /ruby/lib/bundler/man/
