@@ -16,3 +16,4 @@ $ ../bin/run ex.Select1
 ## Eclipseでの実行
 
 Import Existing Projects => このディレクトリを指定
+"Run"で実行
