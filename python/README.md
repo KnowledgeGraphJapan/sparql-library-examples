@@ -13,3 +13,7 @@ $ pip install sparqlwrapper
 ```
 $ python src/select1.py
 ```
+
+## 参考
+
+[sparql-client](https://github.com/eea/sparql-client)
