@@ -12,12 +12,18 @@ $ sbcl
 ```
 * (load "quicklisp.lisp")
 * (quicklisp-quickstart:install)
-* (load "setup.lisp")
+* (load "~/quicklisp/setup.lisp")
 * (ql:add-to-init-file)
 ```
 
 ## ライブラリ
 [cl-fuseki](https://github.com/madnificent/cl-fuseki.git)
+
+git cloneでも良いし、ローカルのディレクトリにおいてあるのをコピーでも良い。
+
+```
+$ cp quicklisp/local-projects/cl-fuseki ~/quicklisp/local-projects/
+```
 
 ```
 * (require 'asdf)
