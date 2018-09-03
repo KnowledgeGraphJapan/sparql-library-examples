@@ -29,6 +29,19 @@
     (setf *standard-prefixes*
           (remove-if (lambda (prefix-prefix) (string= prefix prefix-prefix))
                      *standard-prefixes* :key #'prefix-prefix))))
+
+(defun get-prefix-alist ()
+  "Returns an alist of prefixes."
+  (loop for prefix in *standard-prefixes*
+     collect (cons (prefix-prefix prefix)
+                   (prefix-iri prefix))))
+
+(defun get-prefix (prefix)
+  "Returns the value associated to the supplied prefix."
+  (let ((cell (assoc prefix (get-prefix-alist) :test #'string=)))
+    (when (consp cell)
+      (cdr cell))))
+
 (defun query-update-prefixes (query &key (prefix T prefix-p) &allow-other-keys)
   "Updates the query unless the :prefix keyword has been set to nil."
   (if (or prefix (not prefix-p))
