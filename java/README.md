@@ -9,8 +9,8 @@ Mavenでインストールしたい場合は [Using Jena with Apache Maven](http
 
 ```
 $ cd src
-$ ../bin/compile ex/Select1.java
-$ ../bin/run ex.Select1
+$ javac -cp '../lib/*' ex/Select1.java
+$ java -cp '../lib/*:.' ex.Select1
 ```
 
 ## Eclipseでの実行
