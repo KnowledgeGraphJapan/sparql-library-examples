@@ -19,6 +19,10 @@ SPARQLを各プログラム言語から使うためのサンプル集
   * [SPARQL with R in less than 5 minutes](https://www.r-bloggers.com/sparql-with-r-in-less-than-5-minutes/)
   * [R and Linked Data - comparing linked datasets for analysis](https://medium.swirrl.com/r-and-linked-data-comparing-linked-datasets-for-analysis-7ec247011e3c)
 
+## SPARQLクエリ例
+
+* [SPARQL本クエリ例](https://github.com/sparql-book/sparql-book)
+
 ## License
 
 The sample codes are under the terms of the [UNLINCESE](http://unlicense.org).
